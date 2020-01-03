@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13298" started-at="2020-01-02T15:27:46Z" finished-at="2020-01-02T15:27:59Z">
+  <suite name="Default suite" duration-ms="50254" started-at="2020-01-03T09:10:52Z" finished-at="2020-01-03T09:11:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13298" started-at="2020-01-02T15:27:46Z" finished-at="2020-01-02T15:27:59Z">
+    <test name="Default test" duration-ms="50254" started-at="2020-01-03T09:10:52Z" finished-at="2020-01-03T09:11:43Z">
       <class name="com.fabot.tests.LoginTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.fabot.tests.LoginTest@370736d9]" name="startReport" is-config="true" duration-ms="219" started-at="2020-01-02T15:27:45Z" finished-at="2020-01-02T15:27:46Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.fabot.tests.LoginTest@370736d9]" name="startReport" is-config="true" duration-ms="254" started-at="2020-01-03T09:10:52Z" finished-at="2020-01-03T09:10:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.fabot.tests.LoginTest@370736d9]" name="loginTest" duration-ms="13275" started-at="2020-01-02T15:27:46Z" finished-at="2020-01-02T15:27:59Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.fabot.tests.LoginTest@370736d9]" name="loginTest" duration-ms="50238" started-at="2020-01-03T09:10:52Z" finished-at="2020-01-03T09:11:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.fabot.tests.LoginTest@370736d9]" name="stopReport" is-config="true" duration-ms="434" started-at="2020-01-02T15:27:59Z" finished-at="2020-01-02T15:27:59Z">
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.fabot.tests.LoginTest@370736d9]" name="stopReport" is-config="true" duration-ms="307" started-at="2020-01-03T09:11:43Z" finished-at="2020-01-03T09:11:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopReport -->
