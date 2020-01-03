@@ -11,6 +11,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
@@ -66,7 +67,7 @@ public class KeyWordEngine extends SeleniumBase{
 					category = sheet.getRow(i + 1).getCell(k + 10).toString().trim();
 					test = extent.createTest(testcaseName, testcaseDec);
 				    test.assignAuthor(author);
-				    test.assignCategory(category);  
+				    test.assignCategory(category); 
 				}
 
 				switch (action) {
@@ -92,43 +93,85 @@ public class KeyWordEngine extends SeleniumBase{
 
 				switch (locatorType) {
 				case "id":
-					element = driver.findElement(By.id(locatorValue));
+					try {
+						element = driver.findElement(By.id(locatorValue));
+					} catch (WebDriverException e) {
+						e.printStackTrace();
+						reportStep("Unable to perform "+action+" as element not found", "fail");
+
+					}
 					performAction(action, value);
 					locatorType = null;
 					break;
 
 				case "name":
+					try {
 					element = driver.findElement(By.name(locatorValue));
+					} catch (WebDriverException e) {
+						e.printStackTrace();
+						reportStep("Unable to perform "+action+" as element not found", "fail");
+
+					}
 					performAction(action, value);
 					locatorType = null;
 					break;
 
 				case "xpath":
+					try {
 					element = driver.findElement(By.xpath(locatorValue));
+					} catch (WebDriverException e) {
+						e.printStackTrace();
+						reportStep("Unable to perform "+action+" as element not found", "fail");
+
+					}
 					performAction(action, value);
 					locatorType = null;
 					break;
 
 				case "cssSelector":
+					try {
 					element = driver.findElement(By.cssSelector(locatorValue));
+					} catch (WebDriverException e) {
+						e.printStackTrace();
+						reportStep("Unable to perform "+action+" as element not found", "fail");
+
+					}
 					performAction(action, value);
 					locatorType = null;
 					break;
 
 				case "className":
+					try {
 					element = driver.findElement(By.className(locatorValue));
+					} catch (WebDriverException e) {
+						e.printStackTrace();
+						reportStep("Unable to perform "+action+" as element not found", "fail");
+
+					}
 					performAction(action, value);
 					locatorType = null;
 					break;
 
 				case "linkText":
+					try {
 					element = driver.findElement(By.linkText(locatorValue));
+					} catch (WebDriverException e) {
+						e.printStackTrace();
+						reportStep("Unable to perform "+action+" as element not found", "fail");
+
+					}
 					element.click();
 					locatorType = null;
 					break;
 
 				case "partialLinkText":
+					try {
 					element = driver.findElement(By.partialLinkText(locatorValue));
+					} catch (WebDriverException e) {
+						e.printStackTrace();
+						reportStep("Unable to perform "+action+" as element not found", "fail");
+
+					}
 					element.click();
 					locatorType = null;
 					break;
