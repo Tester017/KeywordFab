@@ -35,13 +35,6 @@ public abstract class Reporter{
 		extent.attachReporter(reporter);
 	}
 	
-    /*@BeforeClass
-	public void report() throws IOException {
-		test = extent.createTest(testcaseName, testcaseDec);
-	    test.assignAuthor(author);
-	    test.assignCategory(category);  
-	}*/
-    
     public abstract long takeSnap();
     
     public void reportStep(String desc, String status,boolean bSnap ) {

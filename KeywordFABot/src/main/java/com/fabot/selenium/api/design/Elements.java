@@ -12,7 +12,7 @@ public interface Elements {
 	 * This method will click the element and take snap
 	 * @param ele   - The Webelement (button/link/element) to be clicked
 	 * @see locateElement method in Browser Class
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @throws StaleElementReferenceException
 	 */
 	public void click(WebElement ele);
@@ -23,7 +23,7 @@ public interface Elements {
 	 * @param ele   - The Webelement (text field) in which the data to be entered
 	 * @param data  - The data to be sent to the webelement
 	 * @see locateElement method in Browser Class
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @throws ElementNotInteractable,IllegalArgumentException(throws if keysToSend is null)	
 	 */
 	public void append(WebElement ele, String data);
@@ -32,7 +32,7 @@ public interface Elements {
 	 * This method will clear the value in the given text field 
 	 * @param ele   - The Webelement (text field) in which the data to be entered
 	 * @see locateElement method in Browser Class
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @throws InvalidElementStateException	(throws if not user-editable element)	 
 	 */
 	public void clear(WebElement ele);
@@ -42,7 +42,7 @@ public interface Elements {
 	 * @param ele   - The Webelement (text field) in which the data to be entered
 	 * @param data  - The data to be sent to the webelement
 	 * @see locateElement method in Browser Class
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @throws ElementNotInteractable,IllegalArgumentException(throws if keysToSend is null)		 
 	 */
 	public void clearAndType(WebElement ele,String data);
@@ -50,7 +50,7 @@ public interface Elements {
 	/**
 	 * This method will get the visible text of the element
 	 * @param ele   - The Webelement (button/link/element) in which text to be retrieved
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @see locateElement method in Browser Class
 	 */
 	public String getElementText(WebElement ele);	
@@ -59,7 +59,7 @@ public interface Elements {
 	 * This method will get the Color values of the element
 	 * @param ele   - The Webelement (button/link/element) in which text to be retrieved
 	 * @see locateElement method in Browser Class
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @return The visible text of this element.
 	 */
 	public String getBackgroundColor(WebElement ele);
@@ -68,7 +68,7 @@ public interface Elements {
 	 * This method will get the text of the element textbox
 	 * @param ele   - The Webelement (button/link/element) in which text to be retrieved
 	 * @see locateElement method in Browser Class
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @return The attribute/property's current value (or) null if the value is not set.
 	 */
 	public String getTypedText(WebElement ele);
@@ -79,7 +79,7 @@ public interface Elements {
 	 * @param ele   - The Webelement (dropdown) to be selected
 	 * @param value The value to be selected (visibletext) from the dropdown
 	 * @see locateElement method in Browser Class 
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @throws NoSuchElementException
 	 */
 	public void selectDropDownUsingText(WebElement ele, String value) ;
@@ -89,7 +89,7 @@ public interface Elements {
 	 * @param ele   - The Webelement (dropdown) to be selected
 	 * @param index The index to be selected from the dropdown
 	 * @see locateElement method in Browser Class
-	 * @author Babu - TestLeaf
+	 * @author Babu - Tester
 	 * @throws NoSuchElementException
 	 */
 	public void selectDropDownUsingIndex(WebElement ele, int index) ;
@@ -99,7 +99,7 @@ public interface Elements {
 	 * @param ele   - The Webelement (dropdown) to be selected
 	 * @param value - The value to be selected (value) from the dropdown 
 	 * @see locateElement method in Browser Class
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @throws NoSuchElementException
 	 */
 	public void selectDropDownUsingValue(WebElement ele, String value) ;
@@ -108,7 +108,7 @@ public interface Elements {
 	 * This method will verify exact given text with actual text on the given element
 	 * @param ele   - The Webelement in which the text to be need to be verified
 	 * @param expectedText  - The expected text to be verified
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @see locateElement method in Browser Class
 	 * @return true if the given object represents a String equivalent to this string, false otherwise
 	 */
@@ -118,7 +118,7 @@ public interface Elements {
 	 * This method will verify given text contains actual text on the given element
 	 * @param ele   - The Webelement in which the text to be need to be verified
 	 * @param expectedText  - The expected text to be verified
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @see locateElement method in Browser Class
 	 * @return true if this String represents the same sequence of characters as the specified string, false otherwise
 	 */
@@ -129,7 +129,7 @@ public interface Elements {
 	 * @param ele   - The Webelement in which the attribute value to be need to be verified
 	 * @param attribute  - The attribute to be checked (like value, href etc)
 	 * @param value  - The value of the attribute
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @see locateElement method in Browser Class
 	 * @return true if this String represents the same sequence of characters as the specified value, false otherwise
 	 */
@@ -140,7 +140,7 @@ public interface Elements {
 	 * @param ele   - The Webelement in which the attribute value to be need to be verified
 	 * @param attribute  - The attribute to be checked (like value, href etc)
 	 * @param value  - The value of the attribute
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @see locateElement method in Browser Class
 	 * @return true if this String represents the same sequence of characters as the specified value, false otherwise
 	 * 
@@ -150,7 +150,7 @@ public interface Elements {
 	/**
 	 * This method will verify if the element is visible in the DOM
 	 * @param ele   - The Webelement to be checked
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @see locateElement method in Browser Class
 	 * @return true if the element is displayed or false otherwise
 	 */
@@ -159,7 +159,7 @@ public interface Elements {
 	/**
 	 * This method will checking the element to be invisible
 	 * @param ele   - The Webelement to be checked
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @see locateElement method in Browser Class
 	 */
 	public boolean verifyDisappeared(WebElement ele);	
@@ -168,7 +168,7 @@ public interface Elements {
 	 * This method will verify if the input element is Enabled
 	 * @param ele   - The Webelement (Radio button, Checkbox) to be verified
 	 * @return true - if the element is enabled else false
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @since 28th December 2018
 	 * @see locateElement method in Browser Class
 	 * @return True if the element is enabled, false otherwise.
@@ -178,7 +178,7 @@ public interface Elements {
 	/**
 	 * This method will verify if the element (Radio button, Checkbox) is selected
 	 * @param ele   - The Webelement (Radio button, Checkbox) to be verified
-	 * @author Sarath - TestLeaf
+	 * @author Daniel - Tester
 	 * @since 28th December 2018
 	 * @see locateElement method in Browser Class
 	 * @return True if the element is currently selected or checked, false otherwise.
